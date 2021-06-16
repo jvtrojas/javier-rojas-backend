@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_block_texts",
+  "info": {
+    "name": "text",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

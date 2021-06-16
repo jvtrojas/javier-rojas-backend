@@ -29,6 +29,29 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "location": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "text_block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.text"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
