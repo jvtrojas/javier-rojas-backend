@@ -56,6 +56,11 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "group": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.group"
     }
   }
 }
