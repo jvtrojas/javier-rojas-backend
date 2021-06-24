@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_block_hp_groups",
+  "info": {
+    "name": "hp_group",
+    "icon": "arrow-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "row": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "info": {
+      "type": "text"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
