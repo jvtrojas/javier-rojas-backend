@@ -15,10 +15,17 @@
     "title": {
       "type": "string"
     },
-    "group": {
-      "type": "component",
-      "repeatable": true,
-      "component": "block.hp-group"
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
