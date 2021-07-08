@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "about"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "date": {
+      "type": "date"
+    },
+    "text_block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "groups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.group"
+    }
+  }
+}

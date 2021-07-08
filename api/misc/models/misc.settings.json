@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "miscs",
+  "info": {
+    "name": "misc",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "date": {
+      "type": "date"
+    },
+    "text_block": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.text"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "group": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.group"
+    }
+  }
+}

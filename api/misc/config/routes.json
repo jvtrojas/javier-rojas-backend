@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/miscs",
+      "handler": "misc.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/miscs/count",
+      "handler": "misc.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/miscs/:id",
+      "handler": "misc.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/miscs",
+      "handler": "misc.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/miscs/:id",
+      "handler": "misc.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/miscs/:id",
+      "handler": "misc.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
