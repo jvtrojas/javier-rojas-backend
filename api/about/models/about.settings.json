@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "abouts",
   "info": {
-    "name": "about"
+    "name": "about",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -41,7 +42,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "groups": {
+    "group": {
       "type": "component",
       "repeatable": true,
       "component": "block.group"
